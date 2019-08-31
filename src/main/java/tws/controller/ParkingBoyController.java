@@ -32,7 +32,7 @@ public class ParkingBoyController {
     @ResponseStatus(HttpStatus.CREATED)
     public void insertParkingboy(@RequestBody Parkingboy parkingboy) {
     	String parkingboyID = UUID.randomUUID().toString();
-    	parkingboy.setParkingboyId(parkingboyID);;
+    	parkingboy.setParkingboyId(parkingboyID);
     	parkingboyMapper.insertParkingBoy(parkingboy);
     }
 
